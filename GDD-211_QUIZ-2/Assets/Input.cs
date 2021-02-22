@@ -15,13 +15,12 @@ public class Input : MonoBehaviour
     {
         playerName = playerHandle.text;
         myAge = int.Parse(playerAge.text);
-
-        PlayerPrefs.SetString("ThisPlayer", playerName);
-        PlayerPrefs.SetInt("ThisAge", myAge);
     }
 
     public void nextScene()
     {
+        PlayerPrefs.SetString("ThisPlayer", playerName);
+        PlayerPrefs.SetInt("ThisAge", myAge);
         SceneManager.LoadScene("Game");
     }
 }
