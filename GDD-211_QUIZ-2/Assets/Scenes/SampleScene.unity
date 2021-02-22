@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 534960923}
   - component: {fileID: 534960922}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 590843435}
   - component: {fileID: 590843434}
   m_Layer: 5
-  m_Name: InputField (1)
+  m_Name: Age
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,6 +838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6809a978eac10488d354e4fd6804d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandle: {fileID: 534960922}
+  playerAge: {fileID: 590843434}
+  playerName: 
+  myAge: 0
 --- !u!1 &1166739556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,13 +1163,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 851911888}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 851911890}
+        m_TargetAssemblyTypeName: Input, Assembly-CSharp
+        m_MethodName: nextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
